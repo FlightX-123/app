@@ -1,0 +1,7 @@
+{
+  "name": "flightTracker",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react-vite"
+}
