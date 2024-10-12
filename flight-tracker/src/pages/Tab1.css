@@ -1,0 +1,120 @@
+.custom-header {
+    background-color: white; /* Set header background to white */
+    box-shadow: none; /* Remove any shadow */
+    padding: 0; /* Remove padding */
+    position: relative; /* Position relative for absolute positioning of the button */
+}
+
+.search-bar-container {
+    display: flex; /* Use flexbox for alignment */
+    align-items: center; /* Center items vertically */
+    max-width: 600px; /* Max width for the search bar */
+    margin: 10px; /* Center horizontally with margin */
+    background-color: white; /* White background for the search bar */
+    border-radius: 24px; /* Rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Light shadow */
+    padding: 5px 15px; /* Padding for better spacing */
+    position: relative; /* Position relative for cancel button */
+}
+
+.cancel-button {
+    position: absolute; /* Position absolutely to overlap with the search bar */
+    right: 10px; /* Position to the right inside the header */
+    top: 50%; /* Center vertically */
+    transform: translateY(-50%); /* Adjust for the vertical centering */
+    color: #007bff; /* Button color (Ionic primary color) */
+    font-size: 16px; /* Font size */
+    visibility: hidden; /* Initially hidden */
+    opacity: 0; /* Initially hidden */
+    transition: visibility 0s, opacity 0.3s ease; /* Smooth transition */
+}
+
+.search-bar-container:focus-within .cancel-button {
+    visibility: visible; /* Show when search bar is focused */
+    opacity: 1; /* Show when search bar is focused */
+}
+
+/* Add hover effect */
+.search-bar-container:hover {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); /* Enhanced shadow on hover */
+}
+
+/* Input field styling */
+.custom-input {
+    border: none; /* No border */
+    outline: none; /* No outline */
+    flex: 1; /* Take up remaining space */
+    padding: 10px; /* Padding for input */
+    font-size: 16px; /* Font size for the input */
+}
+
+/* Change input background on focus */
+.custom-input:focus {
+    background-color: #f9f9f9; /* Light background on focus */
+}
+
+
+/* Profile icon styling */
+.profile-icon {
+    color: #888; /* Icon color */
+    font-size: 24px; /* Size of the icon */
+    margin-right: 10px; /* Space between icon and input */
+}
+
+/* Cancel icon styling */
+.cancel-icon {
+    color: #888; /* Icon color */
+    font-size: 24px; /* Size of the icon */
+    cursor: pointer; /* Pointer cursor to indicate clickable */
+    margin-left: 10px; /* Space between input and icon */
+}
+
+/* Placeholder styling */
+.custom-input::placeholder {
+    color: #aaa; /* Placeholder text color */
+}
+
+/* Additional styling for body */
+body {
+    font-family: 'Inter', sans-serif; /* Font family */
+    background-color: #f0f0f0; /* Page background color */
+}
+
+/* Blur effect for the rest of the content */
+.blurred-content {
+    filter: blur(8px); /* Apply blur effect */
+    transition: all 0.3s ease; /* Smooth transition */
+}
+
+.flight-card {
+    background-color: #1e1e1e;
+    color: #fff;
+    border-radius: 8px; /* Reduced border radius for a smaller look */
+    padding: 10px; /* Reduce padding for a smaller card */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2); /* Lighter shadow */
+    margin-bottom: 10px; /* Reduce margin between cards */
+    transition: transform 0.2s, box-shadow 0.2s; /* Slightly quicker transition */
+  }
+
+/* Card hover effect */  
+.flight-card:hover {  
+    transform: translateY(-5px);  
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);  
+}  
+
+/* Typography adjustments */
+.flight-card h2,
+.flight-card h3 {
+  margin: 0;
+  font-size: 16px; /* Smaller font size */
+}
+
+.flight-card .time {
+    font-size: 20px; /* Smaller font size */
+  }
+  
+/* General body styling */  
+body {  
+    font-family: 'Inter', sans-serif;  
+    background-color: #f0f0f0;  
+}
